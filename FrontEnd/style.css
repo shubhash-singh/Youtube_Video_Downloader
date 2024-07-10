@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 10px;
+    font-size: 24px;
+    color: #ff4081;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav select {
+    margin: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.download-section h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e33670;
+}
+
+.error-message {
+    color: #ff4081;
+    font-size: 14px;
+}
+
+.description {
+    margin: 40px 0;
+}
+
+.description h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.instructions {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.instructions h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin: 10px 0;
+}
