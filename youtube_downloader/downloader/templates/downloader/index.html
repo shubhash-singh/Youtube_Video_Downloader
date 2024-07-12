@@ -1,47 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Downloader</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'downloader/styles.css' %}">
-    <script src="{% static 'js/script.js' %}"></script>
 
-</head>
-<body>
-    <header>
-        <h1>YouTube Video Downloader</h1>
-        
-        <nav>
-            <select>
-                <option value="en">English</option>
-                <option value="en">Hindi</option>
-            </select>
-        </nav>
-    </header>
-    <main>
-        <section class="download-section">
-            <h2>Download any videos from Youtube</h2>
-            <form method="post" action="{% url 'download_video' %}">
-                {% csrf_token %}
-                <input type="text" name="url" placeholder="Enter YouTube video URL" required>
-                <button type="submit">Download</button>
-            </form>
-            <p class="error-message">0 search results found.</p>
-        </section>
-        <section class="description">
-            <h3>The best YouTube Video Downloader</h3>
-            <p>YouTube Videoz Downloader helps you download any YouTube video in the best quality. Download YouTube videos in MP3, MP4, 3GP, M4A, and many more formats.</p>
-        </section>
-        <section class="instructions">
-            <h4>How to download YouTube videos?</h4>
-            <ol>
-                <li>Paste YouTube url or enter keywords into the search box.</li>
-                <li>Choose output MP3 or MP4 format you want to download, then click "Download" button.</li>
-                <li>Wait until the conversion is completed and download the file.</li>
-            </ol>
-        </section>
-    </main>
-</body>
+<!DOCTYPE html> 
+<html> 
+<body> 
+  
+<h1>Youtube video downloader</h1> 
+  
+  
+<form action="" method="post"> 
+  {% csrf_token %} 
+  
+  <label for="link">Enter URL:</label> 
+  <input type="text" id="link" name="link"><br><br> 
+  <input type="submit" value="Submit"> 
+</form> 
+  
+</body> 
 </html>
