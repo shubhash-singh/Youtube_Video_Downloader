@@ -1,16 +1,16 @@
 """
-WSGI config for youtube_downloader project.
+WSGI config for YouTube_Video_Downloader project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'youtube_downloader.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'YouTube_Video_Downloader.settings')
 
 application = get_wsgi_application()
