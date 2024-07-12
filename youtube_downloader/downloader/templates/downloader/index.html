@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Video Downloader</title>
-    <link rel="stylesheet" href="style.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'downloader/styles.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+
 </head>
 <body>
     <header>
@@ -13,15 +16,17 @@
         <nav>
             <select>
                 <option value="en">English</option>
+                <option value="en">Hindi</option>
             </select>
         </nav>
     </header>
     <main>
         <section class="download-section">
             <h2>Download any videos from Youtube</h2>
-            <form>
-                <input type="text" placeholder="Search or paste link here..." />
-                <button type="submit">Start ➜</button>
+            <form method="post" action="{% url 'download_video' %}">
+                {% csrf_token %}
+                <input type="text" name="url" placeholder="Enter YouTube video URL" required>
+                <button type="submit">Download</button>
             </form>
             <p class="error-message">0 search results found.</p>
         </section>
