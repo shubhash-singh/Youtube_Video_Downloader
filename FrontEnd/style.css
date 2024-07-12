@@ -5,12 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9; 
+    
+    background-color:deepskyblue;
+    
 }
 
 header {
     width: 100%;
-    background-color: #9542f5;
+    background-color: orangered;
     border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
@@ -38,6 +40,7 @@ nav a {
 
 nav select {
     margin: 10px;
+    background: #FFBB00;
 }
 
 main {
@@ -48,8 +51,8 @@ main {
 }
 
 .download-section h2 {
-    font-size: 32px;
-    color: #333;
+    font-size: 34px;
+    color:black;
 }
 
 form {
@@ -63,6 +66,7 @@ form input {
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #CEE6F2;
 }
 
 form button {
@@ -81,7 +85,7 @@ form button:hover {
 
 .error-message {
     color: black;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .description {
@@ -89,22 +93,32 @@ form button:hover {
 }
 
 .description h3 {
+    font-size: 26px;
+    color:black;
+}
+
+.description p {
     font-size: 24px;
-    color: #333;
+    color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .instructions {
     text-align: left;
     margin-top: 20px;
+
 }
 
 .instructions h4 {
-    font-size: 20px;
-    color: #333;
+    font-size: 25px;
+    color: Black;
+
 }
 
 .instructions ol {
     padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .instructions li {
