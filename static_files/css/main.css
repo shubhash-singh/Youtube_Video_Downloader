@@ -25,7 +25,7 @@ p {
 }
 
 .title {
-    color: white;
+    color: rgb(247, 190, 190);
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -50,8 +50,8 @@ p {
 }
 
 .content > form > input[type="submit"] {
-    background: #D6F227;
-    font-size: 18px;
+    background: #0066ff;
+    font-size: 22px;
     font-family: 'Gotham Bold';
     padding: 15px 20px;
     border: 0;
